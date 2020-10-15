@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="605dp"
+                android:background="@drawable/scree"
+                tools:ignore="MissingConstraints">
+
+
+                <Button
+                    android:id="@+id/OptButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="232dp"
+                    android:background="@drawable/custom_button"
+                    android:text="                        Optimization"
+                    android:textAlignment="textStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/VisButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="176dp"
+                    android:background="@drawable/button_default"
+                    android:text="                        Visualization"
+                    android:textAlignment="textStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/workButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="299dp"
+                    android:background="@drawable/button_default"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+
+                    android:text="                        workrate"
+
+                    android:textAlignment="textStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/ProButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="361dp"
+                    android:background="@drawable/custom_button"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:text="                         Projects"
+                    android:textAlignment="textStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="160dp"
+                    android:layout_marginBottom="493dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Welcome to Existencial"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/ExButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="115dp"
+                    android:background="@drawable/button_exi"
+                    android:text="                        Exit"
+                    android:textAlignment="textStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="-20dp"
+                    android:layout_marginBottom="-4dp"
+                    android:fontFamily="@font/cath"
+                    android:text="powered by hallucci"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="566dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+

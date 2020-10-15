@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project lists and information" />
+
+        <TextView
+            android:id="@+id/records_TextView"
+            android:layout_width="400dp"
+            android:layout_height="275dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/bkbkb"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/user_Input"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:width="300dp"
+            android:importantForAutofill="no"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/add_Button"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_Input"
+            android:layout_alignStart="@+id/user_Input"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="28dp"
+            android:onClick="addButtonClicked"
+            android:text="@string/add"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/delete_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/add_Button"
+            android:layout_alignEnd="@+id/user_Input"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="67dp"
+            android:onClick="deleteButtonClicked"
+            android:text="@string/delete"
+            tools:ignore="MissingConstraints,OnClick" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
